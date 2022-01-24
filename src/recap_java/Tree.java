@@ -2,7 +2,7 @@ package recap_java;
 
 
 public class Tree {
-	//TODO traversal
+	
 	private class Node {
 		Node left, right;
 		int data;

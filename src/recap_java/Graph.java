@@ -2,7 +2,7 @@ package recap_java;
 import java.util.*;
 
 public class Graph {
-	//TODO traversing 
+
 	private Map<Vertex,List<Vertex>> adjVertices;
 	
 	 public Graph() {
