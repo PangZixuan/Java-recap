@@ -1,16 +1,21 @@
 package recap_java;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
+class Node<T extends Comparable<?>> {
+	Node left, right;
+	int data;
+	public Node(int data) {
+		this.data = data;
+	}
+	
+}
 public class Tree {
 	
-	private class Node {
-		Node left, right;
-		int data;
-		public Node(int data) {
-			this.data = data;
-		}
-		
-	}
+
 	Node root;
 	private Node addRecursive(Node current, int value) {
 		if(current == null) {
@@ -90,11 +95,28 @@ public class Tree {
 	 public void delete (int value) {
 		 root = deleteRecursive(root,value);
 	 }
-	  public void printInOrder(Node node) {
+
+	 // preorder traversal for trees.  Post order will just flip the order of right and left order
+	  public void printPreOrder(Node node) {
 	        if (node != null) {
-	            printInOrder(node.left);
+	            printPreOrder(node.left);
 	            System.out.println(" "+node.data);
-	            printInOrder(node.right);
+	            printPreOrder(node.right);
 	        }
 	    }
+
+
+
+	//////////////////////////// tests////////////////////////
+	public static void main(String[] args) {
+		Tree tree = new Tree();
+		Random random = new Random();
+		for(int i=0; i <15 ; i++){
+			int value = random.nextInt(0,100);
+            tree.add(value);
+			
+        }
+		tree.printPreOrder(tree.root);
+	}
+	
 }

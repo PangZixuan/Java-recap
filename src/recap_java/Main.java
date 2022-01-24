@@ -26,23 +26,12 @@ public class Main {
 		//System.out.println(tree.containsNode(4));
 		//System.out.println(tree.containsNode(0));
 		//Stacks/ Queues
-		Stack stack = new Stack();
-;		Random random = new Random();
-		int topValue = 0;
-		for(int i=0; i< 10; i++) {
-			int value = random.nextInt(1,100);
-			stack.push(value);
-			topValue = value;
-		}
+	
 		//System.out.println(topValue); 
 		//System.out.println(stack.peek());
 		
 	//Heap
-		Heap heap = new Heap();
-		for(int i=0; i< 10; i++) {
-			int value = random.nextInt(1,100);
-			heap.add(value);
-		}
+		
 		for(int i=0; i< 10; i++) {
 		//System.out.println(heap.items[i]);
 		}
