@@ -47,6 +47,7 @@ public class Main {
 		//System.out.println(heap.items[i]);
 		}
 		//Hash
+		/*
 		Hashtable<Integer,String> ht = new Hashtable<>(10);
 		ht.put(1, "one");
 		ht.put(2, "two");
@@ -58,6 +59,7 @@ public class Main {
 		System.out.println(ht.get(1));
 		ht.remove(1);
 		System.out.println(ht.get(1));
+		*/
 		// Graph
 		 Graph graph = new Graph();
 		    graph.addVertex("Bob");
