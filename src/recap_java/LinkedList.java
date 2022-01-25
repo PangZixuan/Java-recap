@@ -3,14 +3,14 @@ package recap_java;
 
 public class LinkedList {
 	Node head;
-	int data;
+	Object data;
 	
 	class Node{
-		int data;
+		Object data;
 		Node next;
-		Node(int data) {this.data = data;}
+		Node(Object data) {this.data = data;}
 	}
-	public void append(int data) {
+	public void append(Object data) {
 		Node new_node = new Node(data);
 		
 		if (this.head == null) {
@@ -24,12 +24,12 @@ public class LinkedList {
 			last.next = new_node;
 		}
 	}
-	public  void prepend(int data) {
+	public  void prepend(Object data) {
 		Node new_head = new Node(data);
 		new_head.next = this.head;
 		this.head = new_head;
 	}
-	public void insert(int index, int data) {
+	public void insert(int index, Object data) {
 		Node temp = new Node(data);
 		Node prev = get(index);
 		Node next = prev.next;
@@ -48,7 +48,7 @@ public class LinkedList {
 		return  current;
 		
 	}
-	public void deleteValue(int data) {
+	public void deleteValue(Object data) {
 		if (this.head == null) return;
 		if(this.head.data == data) {
 			head = head.next;

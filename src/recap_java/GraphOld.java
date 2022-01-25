@@ -1,40 +1,16 @@
 package recap_java;
-import java.util.*;
 
-class Edge {
-    int src, dest, weight;
-    Edge(int src, int dest, int weight) {
-            this.src = src;
-            this.dest = dest;
-            this.weight = weight;
-        }
-}
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class Graph {
-	Hashtable adjMap = new Hashtable(10);
-		// node of adjacency list 
-	class Node {
-		int value, weight;
-		Node(int value, int weight)  {
-			this.value = value;
-			this.weight = weight;
-		}
-	}
-	List<List<Node>> adj_list = new ArrayList<>();
-	private Map<Vertex,List<Vertex>> adjVertices;
-	public LinkedList findAdjList(Vertex vertex){
-		
-		return 
-	}
-	 public Graph(List<Vertex> vertices , List<Edge> edges) {
-		for (Vertex vertex : vertices){
-			adjMap.put(vertex, adj_list);
-		}
-	    for (Edge e : edges)
-        {
-            // allocate new node in adjacency List from src to dest
-            adj_list.get(e.src).add(new Node(e.dest, e.weight));
-        }
+public class GraphOld {
+
+	//TODO traversing 
+    private Map<Vertex,List<Vertex>> adjVertices;
+	 public GraphOld() {
+	        this.adjVertices = new HashMap<Vertex, List<Vertex>>();
 	    }
 
 	 public void addVertex(String label) {
@@ -75,5 +51,7 @@ public class Graph {
 		            this.label = label;
 		        }
 	}
+
+
 
 }

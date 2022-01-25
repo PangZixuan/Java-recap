@@ -12,8 +12,8 @@ public class Main {
 		linky.append(1);
 		linky.deleteValue(1);
 		linky.insert(1,6);
+		System.out.println(linky.get(0).data);
 		System.out.println(linky.get(1).data);
-		System.out.println(linky.get(2));
 		// Trees
 		Tree tree = new Tree();
 		tree.add(1);
@@ -50,18 +50,7 @@ public class Main {
 		System.out.println(ht.get(1));
 		*/
 		// Graph
-		 Graph graph = new Graph();
-		    graph.addVertex("Bob");
-		    graph.addVertex("Alice");
-		    graph.addVertex("Mark");
-		    graph.addVertex("Rob");
-		    graph.addVertex("Maria");
-		    graph.addEdge("Bob", "Alice");
-		    graph.addEdge("Bob", "Rob");
-		    graph.addEdge("Alice", "Mark");
-		    graph.addEdge("Rob", "Mark");
-		    graph.addEdge("Alice", "Maria");
-		    graph.addEdge("Rob", "Maria");
+		 
 		    //graph.printGraph();
 	}
 
